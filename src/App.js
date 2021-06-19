@@ -27,7 +27,7 @@ function App() {
     const filteredCoins = coins.filter( coin=> coin.name.toLowerCase().includes(search.toLowerCase()));
     
   return (
-    <div className='bg-gray-900 min-h-screen text-gray-200 relative'>
+    <div className='bg-gray-900 min-h-screen text-gray-200 relative overflow-x-scroll'>
       <Header />
       <Search handleChange={handleChange}/>
       <CoinTitle/>
@@ -46,7 +46,7 @@ function App() {
         )
       }) }
 <footer className='pb-8 mt-20 text-center font-medium'>
-Deigned By : <a href="https://suryakant.netlify.app/"> Suryakant Chandrakar</a>
+Designed By : <a href="https://suryakant.netlify.app/"> Suryakant Chandrakar</a>
 </footer>
       </div>
   );
